@@ -40,21 +40,39 @@
 //     console.log(fruits[i])
 // }
 
-let obj = {
-    'num1':1,
-    'num2':2,
-    'num3':3,
-    'num4':4,
-}
-let sumEven = 0;
-let sumOdd = 0;
+// let obj = {
+//     'num1':1,
+//     'num2':2,
+//     'num3':3,
+//     'num4':4,
+// }
+// let sumEven = 0;
+// let sumOdd = 0;
 
-for(i in obj){
-    if(obj[i] %2 == 0){
-        sumEven += obj[i]
-    }else{
-        sumOdd += obj[i]
-    }
+// for(i in obj){
+//     if(obj[i] %2 == 0){
+//         sumEven += obj[i]
+//     }else{
+//         sumOdd += obj[i]
+//     }
+// }
+
+// console.log(`the sum of Even is : ${sumEven} and sum of odd is : ${sumOdd} while difference is : ${sumEven - sumOdd}`)
+
+// let studentsNames = ['ishimwe','isac','mucyo','mubi','john',]
+
+// for (let i of studentsNames){
+//     console.log(`${i} is at index ${i.indexOf[i]}`)
+// }
+
+const studentsMarks = {
+    ishimwe:20,
+    isac:40,
+    mucyo:55,
+    mubi:43,
+    john:0
 }
 
-console.log(`the sum of Even is : ${sumEven} and sum of odd is : ${sumOdd} while difference is : ${sumEven - sumOdd}`)
+for(let student in studentsMarks){
+    console.log(`student: ${student} has marks : ${studentsMarks[student]}`);
+}
