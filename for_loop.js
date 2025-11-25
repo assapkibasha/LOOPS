@@ -65,14 +65,26 @@
 //     console.log(`${i} is at index ${i.indexOf[i]}`)
 // }
 
-const studentsMarks = {
-    ishimwe:20,
-    isac:40,
-    mucyo:55,
-    mubi:43,
-    john:0
-}
+// const studentsMarks = {
+//     ishimwe:20,
+//     isac:40,
+//     mucyo:55,
+//     mubi:43,
+//     john:0
+// }
 
-for(let student in studentsMarks){
-    console.log(`student: ${student} has marks : ${studentsMarks[student]}`);
-}
+// for(let student in studentsMarks){
+//     console.log(`student: ${student} has marks : ${studentsMarks[student]}`);
+// }
+
+
+let studentsNames = ['ishimwe','isac','mucyo','mubi','john','kibs','vincent']
+console.log(studentsNames)
+// const sortedNames = studentsNames.sort();
+// console.log(sortedNames)
+
+const index = studentsNames.indexOf('mubi');
+console.log(index)
+    studentsNames.splice(index,0)
+
+console.log(studentsNames)
