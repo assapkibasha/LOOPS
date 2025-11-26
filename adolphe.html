@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="adolphe"></ul>
+    <button onclick="addAdolphe()">add element</button>
+
+    <script>
+        let adolphe = 1;
+        function addAdolphe(){
+            const item = document.createElement('li')
+            item.textContent = 'added adolphe' + adolphe;
+            document.getElementById('adolphe').appendChild(item);
+            adolphe++;
+        }
+    </script>
+</body>
+</html>

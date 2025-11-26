@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Item Creator</title>
+</head>
+<body>
+
+  <ul id="itemList"></ul>
+  <button onclick="addItem()">Add Item</button>
+
+  <script>
+    let count = 1;
+
+    function addItem() {
+      const item = document.createElement("li");
+      item.textContent = "item " + count;
+      document.getElementById("itemList").appendChild(item);
+      count++;
+    }
+  </script>
+
+</body>
+</html>

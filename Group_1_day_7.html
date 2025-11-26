@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body id="body-bg">
+     <style>
+          .vincent{
+               color: blue;
+          }
+     </style>
+     <p class="vincent"></p>
+     <p class="vincent"></p>
+
+     <button id="toggleBtn">Click me</button>
+     <button id="change-background">change to Darkmode</button>
+
+     <script>
+          const background = document.getElementById('body-bg')
+          const paragraphs = document.querySelectorAll('.vincent')
+          paragraphs.forEach(p => {
+               p.textContent = 'Welcome Home ';
+               p.style.fontSize = '27px';
+          })
+          
+          let isYellow = false;
+
+          document.getElementById('toggleBtn').addEventListener('click', ()=>{
+               const allParagraphs = document.querySelectorAll('.vincent');
+
+               if(isYellow){
+                    allParagraphs.forEach(p =>{
+                         p.style.backgroundColor = 'white'
+                    })
+                    isYellow = false
+               }else{
+                    allParagraphs.forEach(p =>{
+                         p.style.backgroundColor = 'yellow'
+                    })
+                    isYellow = true
+               }
+          })
+     </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          #full-div{
+               width: 100vw;
+               height: 100vh;
+          }
+     </style>
+</head>
+<body>
+     <div id="full-div"><button id="change-bgc">Change color</button></div>
+     
+
+     <script>
+          let nightLight = false;
+          document.getElementById('change-bgc').addEventListener('click', ()=>{
+               const div  = document.getElementById('full-div')
+               if(nightLight){
+                    div.style.backgroundColor = 'white';
+                    nightLight = false
+               }else{
+                    div.style.nightLight = 'black'
+                    nightLight = true
+               }
+          })
+     </script>
+</body>
+</html> -->
