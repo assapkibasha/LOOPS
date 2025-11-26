@@ -1,4 +1,8 @@
-# LOOPS
-javascript loops fundamentals
 
-//check is palindorme
+
+Ntsinzi Francois
+Twizere Vincent
+Nyirarukundo Mariam
+UwizeyImana claudine
+Manishimwe blaise
+Mutimukeye Florence

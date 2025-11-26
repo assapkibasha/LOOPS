@@ -19,36 +19,41 @@
 // console.log(average)
 
 
-// let employees = {
-//     emp1: {
-//         empName : 'kibahsa',
-//         empSlary : 30,
-//         empRate: 1
-//     },
+let employees = {
+    emp1: {
+        empName : 'kibahsa',
+        empSlary : 30,
+        empRate: 1
+    },
 
-//     emp2:{
-//          empName : 'arthur',
-//         empSlary : 29,
-//         empRate: 2
-//     },
-//      emp3:{
-//         empName : 'eve',
-//         empSlary : 34,
-//         empRate: 3
-//     }
-// }
+    emp2:{
+         empName : 'arthur',
+        empSlary : 29,
+        empRate: 2
+    },
+     emp3:{
+        empName : 'eve',
+        empSlary : 34,
+        empRate: 3
+    },
+    emp4:{
+        empName : 'ever',
+        empSlary : 34,
+      
+    }
+}
 
-// let newSalary;
-//  for (let key in employees){
-//     if(employees.hasOwnProperty(key))
-//     {
-//         if(employees[key].empRate == 1){
-//             console.log(`rate is: ${employees[key].empRate} bonus rate:  ${(employees[key].empSlary * 0.0).toFixed()}    new Salary: ${employees[key].empSlary + employees[key].empSlary * 0.0} Frw `)
-//         }else if(employees[key].empRate == 2){
-//             console.log(`rate is ${employees[key].empRate} bonus rate:   ${(employees[key].empSlary * 0.2).toFixed()}    new Salary: ${employees[key].empSlary + employees[key].empSlary * 0.2} Frw the rate is ${(employees[key].empSlary * 0.2).toFixed()}` )
-//         }else if(employees[key].empRate == 3){
-//             console.log(`rate is ${employees[key].empRate} bonus rate:   ${(employees[key].empSlary * 0.3).toFixed()}    new Salary ${employees[key].empSlary + employees[key].empSlary * 0.3} Frw the rate is ${(employees[key].empSlary * 0.3).toFixed()}`)
+let newSalary;
+ for (let key in employees){
+    if(employees.hasOwnProperty(key))
+    {
+        if(employees[key].empRate == 1){
+            console.log(`rate is: ${employees[key].empRate} bonus rate:  ${(employees[key].empSlary * 0.0).toFixed()}    new Salary: ${employees[key].empSlary + employees[key].empSlary * 0.0} Frw `)
+        }else if(employees[key].empRate == 2){
+            console.log(`rate is ${employees[key].empRate} bonus rate:   ${(employees[key].empSlary * 0.2).toFixed()}    new Salary: ${employees[key].empSlary + employees[key].empSlary * 0.2} Frw the rate is ${(employees[key].empSlary * 0.2).toFixed()}` )
+        }else if(employees[key].empRate == 3){
+            console.log(`rate is ${employees[key].empRate} bonus rate:   ${(employees[key].empSlary * 0.3).toFixed()}    new Salary ${employees[key].empSlary + employees[key].empSlary * 0.3} Frw the rate is ${(employees[key].empSlary * 0.3).toFixed()}`)
 
-//         }
-//     }
-//  }
+        }
+    }
+ }
