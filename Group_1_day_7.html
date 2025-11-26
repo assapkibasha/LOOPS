@@ -42,7 +42,21 @@
                     isYellow = true
                }
           })
+
+          // Dark mode toggle
+          let isDarkMode = false;
+
+          document.getElementById('change-background').addEventListener('click', ()=>{
+               if(isDarkMode){
+                    background.style.backgroundColor = 'white'
+                    isDarkMode = false
+               }else{
+                    background.style.backgroundColor = '#222'
+                    isDarkMode = true
+               }
+          })
      </script>
+</body>
 </body>
 </html>
 
